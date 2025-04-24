@@ -1,1 +1,2 @@
 # Web-Dev-Class-Final-Project
+For this project, I created a website with 2 games I coded: a version of rock-paper-scissors where you played against a computer, and a number guessing game where you have 10 attempts to guess a number between 1 and 1000. The website has 3 pages, a home page which describes the website as a whole, a page to play rock-paper-scissors, and a page to play the number guessing game.

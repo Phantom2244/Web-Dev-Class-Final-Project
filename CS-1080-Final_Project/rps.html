@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Leo Asness' Game Stuff</h1>
+        <h2>Some <b>Games</b> I coded.</h2>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="main-menu.html">Main Menu</a>
+        <a href="rps.html">Rock-Paper-Scissors</a>
+        <a href="num-guess.html">Guess the Number</a>
+    </div>
+
+</header>
+
+<body>
+
+    <div class="main">
+        <h1> Rock-Paper-Scissors</h1>
+
+        <div id="gameResult">~~ WILL YOU BEAT THE COMPUTER???? ~~</div>
+
+        <!-- TRACK THE NUMBER OF ROUNDS PLAYED IN CURRENT GAME --- Goes Up -->
+        <div id="roundsCompleted"></div>
+ 
+        <!-- PLAYER SCORE -- needs div to be updated as class -->
+        <div class="playerScore">
+            <h2>Player</h2>
+            <p id="playerScoreBoard">0</p>
+        </div>
+
+        <!-- COMPUTER SCORE -- needs div to be updated as class -->
+        <div class="computerScore">
+            <h2>Computer</h2>
+            <p id="computerScoreBoard">0</p>
+        </div>
+
+
+        <!-- DISPLAY IF YOU WON/LOST THE MOVE/SHOT -- NOTIFY WHEN OUT OF ROUNDS / MATCH IS COMPLETE -- DISPLAY GAME RESULT -->
+        <div id="roundResult">~~ROUND RESULTS~~</div>
+
+        <br>
+        <div>Player, choose your object ...</div>
+        <!-- CHOOSE OBJECT / SHOOT -->
+
+        <div>
+            <!-- ROCK button 🪨 -->
+            <button class="rockBtn" id="rockBtn" name="rock" value="rock">rock</button> 
+            <!-- PAPER button 📝 -->
+            <button class="paperBtn" id="paperBtn">paper</button>
+            <!-- SCISSORS button ✂️ -->
+            <button class="scissorsBtn" id="scissorsBtn">scissors</button>
+        </div>
+        <br><br><br><br>
+        <!-- CLEAR/REFRESH SCREEN button -->
+        <button class="refreshBtn" id="refreshBtn">REFRESH GAME</button>
+
+    </div>
+
+    <!-- CONNECT TO JS FILE TO RUN SCRIPTS -->
+    <script src="rps.js"></script>
+    
+</body>
+
+<footer>
+    <div class="footer">&copy; 2025 Leo Asness' Last CS1080 Project</div>
+</footer>
+
+
+</html>

@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  /* ~~~~~~ HEADER / TITLE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  .header {
+    font-family: fantasy;
+    padding: 60px;
+    background: black;
+    /* color: #f25cf9; */
+    color: #60e4e9;
+  }
+  
+  /* ~~~~~~ NAV BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /* navigation bar standard */
+  .navbar {
+    font-family: fantasy;
+      display: flex;
+    background-color: #f25cf9;
+    color: black;
+    padding: 8px 8px;
+    justify-content: space-evenly;
+  }
+  
+  /* navigation bar links */
+  .navbar a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  /* navigation bar on hover */
+  .navbar a:hover {
+    background-color: #9900ff;
+    color: white;
+  }
+  
+  /* ~~~~~~ MAIN/BODY AREA ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /* Style the body */
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+    margin: 0;
+  }
+  
+  /* Main column */
+  .main {
+    flex: 70%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  h2 {
+    /* text-transform: uppercase; */
+    font-style: italic;
+    font-size: 0.75rem;
+    font-weight:lighter;
+    /* background-color: black; */
+    /* margin: 0; */
+  }
+  
+  p {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    margin: 0;
+  }
+  
+  rps {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #roundsCompleted {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .p-count, .c-count{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  /* displaying three buttons in one line */
+  .shot{
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    color: white;
+  }
+  
+  #message {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  
+  
+  /* ~~~~~~ BUTTONS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+   
+  button {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #60e4e9;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .option{
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+  }
+  
+  /* rps object buttons */
+  .rockBtn, .paperBtn, .scissorsBtn{
+    background-color: #60e4e9;
+    /* margin-top: 2rem; */
+    width: 150px;
+    text-align: center;
+    /* padding: 1.5rem; */
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    /* margin-top: 1rem; */
+  }
+  
+  /* refresh game button */
+  .refreshBtn{
+    background-color: #9900ff;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  /* ~~~~~~ GAME UTILITIES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  
+  .round{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .result{
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .gameResult{
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .game-status {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ffffff;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  
+  /* ~~~~~~ TABLE STUFF ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  table { border-collapse: collapse; width: 100%; }
+  tbody { border: 1px solid white; padding: 8px; }
+  tr { border: 1px solid white; padding: 8px; }
+  td { border: 1px solid white; padding: 8px; }
+  ul { padding: 20px; }
+  
+  
+  /* ~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /* Footer */
+  .footer {
+    padding: 20px;
+    font-family: Verdana;
+    font-size: 0.55rem;
+    /* background: #000000; */
+  }
+  
+  
+  /* ~~~~~~ RESPONSIVE DESIGN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  @media screen and (max-width: 600px){ 
+    .row, .navbar { flex-direction: column; }
+    .title{ text-align: center; } 
+    .score{ /* position: absolute; */ top: 200px; width: 100vw; }
+    .options{ width: 100vw; }
+  }
+  
+  
+  /* Column container */
+  /* .row {  
+      display: flex;
+      flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  #beginning-article{
+    text-align: center;
+    color: black;
+    background-color: white;
+  }
+  
+  #supernatural-article{
+    text-align: left;
+    color: #f25cf9;
+    background-color: black;
+    padding: 20px;
+  }
+  
+  #mundane-article{
+    text-align: right;
+    color: black;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  #convergence-article{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+  }
+  
+  #gatekeepers-article{
+    text-align: center;
+    color: #00FFFF;
+    background-color: black;
+    padding: 20px;
+  } */
+  
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  /* @media  */
+  /* @media screen and (max-width: 700px) { .row, .navbar { flex-direction: column; } } */
+  
+  
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  /* .side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  } */
+  
+  /* Fake image, just for this example */
+  /* .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  } */

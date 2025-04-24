@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Leo Asness' Game Stuff</h1>
+        <h2>Some <b>Games</b> I coded.</h2>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="main-menu.html">Main Menu</a>
+        <a href="rps.html">Rock-Paper-Scissors</a>
+        <a href="num-guess.html">Guess the Number</a>
+    </div>
+
+</header>
+
+<body>
+    
+    <div class="main">
+        <h1>Guess the Number</h1>
+        <h2>Guess a number between 0 and 1000. You have 10 attempts!
+            The game does not accept letters. Except for e. Becuase that
+            is technically a number. However, since e is ouside the range of
+            1 to 1000, that's not going to help you much.</h2>
+    </div>
+
+    <br>
+    <h3>Player Name (Optional)</h3>
+    <button onclick="nameAssign()">Input a name</button>
+    <hr>
+    <br>
+
+    <script>
+        function nameAssign() {
+            const name = prompt("Enter your name:");
+            localStorage.setItem("username", name);
+        }
+    </script>
+
+    <div class="game-board">
+        <input type="number" id="guessInput" min="0" max="1000" placeholder="Enter your guess" />
+        <button id="guessButton">Submit Guess</button>
+        <p id="message"></p>
+        <p>Attempts left: <span id="attempts">10</span></p>
+        <button class = "refreshBtn" id="resetButton">Reset Game</button>
+    </div>
+
+    <script src="num-guess.js"></script>
+
+</body>
+
+
+<footer>
+    <div class="footer">&copy; 2025 Leo Asness' Last CS1080 Project</div>
+</footer>
+
+
+</html>
